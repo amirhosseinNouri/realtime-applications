@@ -1,4 +1,4 @@
-class Polling {
+class PollingClient {
   interval;
   intervalId;
   host;
@@ -25,5 +25,5 @@ class Polling {
   }
 }
 
-const client = new Polling('http://localhost:8080', 3_000);
+const client = new PollingClient('http://localhost:8080', 3_000);
 client.subscribe();
